@@ -2,18 +2,9 @@
 <br>
 <h1 style="text-align:center"><font color="blue">かなめ特製ポチぽち入力部品集</font></h1>
 <br>
-<body>
-  <div id="root"></div>
-  <script type="text/babel">
-    const App = () => {
-      const widgetCount = 18;
-      const [verified, setVerified] = React.useState([]);
-      React.useEffect(() => {
-        const widgets = [...Array(widgetCount).keys()].map(n =>
-          grecaptcha.render(`widget${n}`, {
-            sitekey: '6Le1Q-4aAAAAAPxiA-8un2vTzU5PoCw9-wWwD7Wr'
-          }));
-      }, []);
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
+
 
 <style>
     .block {
@@ -28,6 +19,7 @@
 </head><body><button type="button" name="aaa" value="aaa">
 <font size="2">ここを</font><font size="5" color="#333399">押せ</font>
 </button>
+<div class="g-recaptcha" data-sitekey="6LdwuGYeAAAAACG7ypsMMXLg6lpUEJY8N6YyWw0i"></div>
 
 <form action="cgi-bin/formmail.cgi" method="post">
 
